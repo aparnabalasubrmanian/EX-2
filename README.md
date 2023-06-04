@@ -6,6 +6,7 @@ AIM :
     To write a python program to perform sliding window protocol
 
 ALGORITHM :
+```
     1. Start the program.
     2. Get the frame size from the user
     3. To create the frame based on the user request.
@@ -13,9 +14,9 @@ ALGORITHM :
     5. If your frames reach the server it will send ACK signal to client otherwise it
        will send NACKsignal to client.
     6. Stop the program
-
+```
 PROGRAM :
-
+```
 CLIENT:
    import socket
    s=socket.socket()
@@ -43,7 +44,7 @@ s.connect(('localhost',8000))
 while True:
     print(s.recv(1024).decode())
     s.send("acknowledgement recived from the server".encode())
-
+```
 OUTPUT:
 CLIENT:
 ![c2](https://github.com/aparnabalasubrmanian/EX-2/assets/123351172/90b6d3f0-7daf-453e-a301-646b2469b98b)
